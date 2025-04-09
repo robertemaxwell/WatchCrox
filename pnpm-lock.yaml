@@ -16,6 +16,8 @@ importers:
         specifier: ^1.10.12
         version: 1.10.12
 
+  packages/backend: {}
+
   packages/frontend:
     dependencies:
       '@metamask/detect-provider':
