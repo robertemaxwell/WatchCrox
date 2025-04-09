@@ -16,6 +16,7 @@ Rails.application.routes.draw do
       
       # Users
       resources :users, only: [:show, :update]
+      get 'users/:id/balance/check', to: 'users#check_balance'
       
       # Listings
       resources :listings do
@@ -26,6 +27,7 @@ Rails.application.routes.draw do
       # Transactions
       resources :transactions, only: [:index, :show, :create, :update]
       get 'user/:user_id/transactions', to: 'transactions#user_transactions'
+      post 'transactions/verified', to: 'transactions#create_verified'
       
       # Disputes
       resources :disputes, only: [:index, :show, :create, :update]

@@ -47,6 +47,11 @@ export const userAPI = {
   updateUser: async (id: number, userData: { username: string }) => {
     return api.put(`/users/${id}`, { user: userData });
   },
+  
+  // Check if user has enough balance for a purchase
+  checkBalance: async (userId: number, currency: string, amount: number) => {
+    return api.get(`/users/${userId}/balance/check`, { params: { currency, amount } });
+  },
 };
 
 // Listing API calls
@@ -99,6 +104,10 @@ export const transactionAPI = {
   
   createTransaction: async (transactionData: any) => {
     return api.post('/transactions', { transaction: transactionData });
+  },
+  
+  createVerifiedTransaction: async (transactionData: any) => {
+    return api.post('/transactions/verified', { transaction: transactionData });
   },
   
   updateTransactionStatus: async (id: number, status: string, reason?: string) => {
