@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  escrow_id: MyString
+  listing: one
+  buyer: one
+  seller: one
+  status: MyString
+  asset_type: MyString
+  amount: 9.99
+
+two:
+  escrow_id: MyString
+  listing: two
+  buyer: two
+  seller: two
+  status: MyString
+  asset_type: MyString
+  amount: 9.99

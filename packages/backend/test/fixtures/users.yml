@@ -1,0 +1,9 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ethereum_address: MyString
+  username: MyString
+
+two:
+  ethereum_address: MyString
+  username: MyString
