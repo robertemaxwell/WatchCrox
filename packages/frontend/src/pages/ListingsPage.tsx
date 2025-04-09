@@ -71,7 +71,7 @@ const ListingsPage: React.FC = () => {
   });
   
   const getImagePlaceholder = () => {
-    return 'https://via.placeholder.com/300x200?text=No+Image';
+    return '/logo192.png';
   };
   
   const getConditionLabel = (condition: string) => {
