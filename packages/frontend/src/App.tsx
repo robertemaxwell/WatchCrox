@@ -8,6 +8,7 @@ import ListingDetailsPage from './pages/ListingDetailsPage';
 import CreateListingPage from './pages/CreateListingPage';
 import ProfilePage from './pages/ProfilePage';
 import TransactionsPage from './pages/TransactionsPage';
+import MyListingsPage from './pages/MyListingsPage';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             <Route path="/listings/:id" element={<ListingDetailsPage />} />
             <Route path="/profile" element={<ProfilePage />} />
             <Route path="/transactions" element={<TransactionsPage />} />
+            <Route path="/my-listings" element={<MyListingsPage />} />
             {/* Add more routes for other pages later */}
           </Routes>
         </Layout>
